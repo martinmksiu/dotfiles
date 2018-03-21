@@ -1,0 +1,80 @@
+{
+    "title": "Mouse Personal rules. available since Karabiner-Elements 11.1.8!",
+    "rules": [
+        {
+            "description": "Mouse button4 → [ + command",
+            "manipulators": [
+                {
+                    "from": {
+                        "pointing_button": "button4"
+                    },
+                    "to": [
+                        {
+                            "key_code": "open_bracket",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.microsoft\\.rdc\\.osx",
+                                "org.qt-project.Qt.QtWebEngineCore"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Mouse button5 → ] + command",
+            "manipulators": [
+                {
+                    "from": {
+                        "pointing_button": "button5"
+                    },
+                    "to": [
+                        {
+                            "key_code": "close_bracket",
+                            "modifiers": [
+                                "command"
+                            ]
+                        }
+                    ],
+                    "conditions": [
+                        {
+                            "type": "frontmost_application_unless",
+                            "bundle_identifiers": [
+                                "^com\\.microsoft\\.rdc\\.osx",
+                                "org.qt-project.Qt.QtWebEngineCore"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        },
+        {
+            "description": "Mouse button3 → Mission Control",
+            "manipulators": [
+                {
+                    "from": {
+                        "pointing_button": "button3"
+                    },
+                    "to": [
+                        {
+                            "key_code": "up_arrow",
+                            "modifiers": [
+                                "control"
+                            ]
+                        }
+                    ],
+                    "type": "basic"
+                }
+            ]
+        }
+    ]
+}
